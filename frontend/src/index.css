@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(1000px 600px at 10% 10%, rgba(99, 102, 241, 0.18), transparent 50%),
+    radial-gradient(900px 700px at 90% 20%, rgba(16, 185, 129, 0.12), transparent 55%),
+    #0a0a0f;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: Space Grotesk, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+.glass {
+  background: rgba(18, 18, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 20px 60px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(14px);
+}
+
+.mono {
+  font-family: JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.fade-in {
+  animation: fadeIn 350ms ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

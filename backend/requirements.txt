@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+groq
+transformers
+torch
+torchvision
+Pillow
+opencv-python
+scenedetect[opencv]
+librosa
+pydub
+numpy
+scipy
+scikit-learn
+soundfile
