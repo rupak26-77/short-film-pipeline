@@ -9,11 +9,11 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from backend.modules.audio_processor import process_audio
-from backend.modules.script_generator import generate_script
-from backend.modules.video_analyzer import analyze_videos
-from backend.utils.logger import get_logger, log_timed
-from backend.utils.validators import ensure_safe_filename, slugify, validate_asset_exists, validate_prompt
+from modules.audio_processor import process_audio
+from modules.script_generator import generate_script
+from modules.video_analyzer import analyze_videos
+from utils.logger import get_logger, log_timed
+from utils.validators import ensure_safe_filename, slugify, validate_asset_exists, validate_prompt
 
 
 load_dotenv()

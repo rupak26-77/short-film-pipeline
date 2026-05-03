@@ -6,8 +6,8 @@ from typing import Any, Dict, List, Tuple
 
 from groq import Groq
 
-from backend.utils.logger import get_logger
-from backend.utils.validators import slugify
+from utils.logger import get_logger
+from utils.validators import slugify
 
 logger = get_logger(__name__)
 

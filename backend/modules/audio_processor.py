@@ -9,8 +9,8 @@ from pydub import AudioSegment
 from pydub.silence import detect_silence
 from scipy.signal import resample
 
-from backend.utils.logger import get_logger
-from backend.utils.validators import audio_info_from_pydub_channels_samplewidth, slugify
+from utils.logger import get_logger
+from utils.validators import audio_info_from_pydub_channels_samplewidth, slugify
 
 logger = get_logger(__name__)
 

@@ -14,8 +14,8 @@ from scenedetect.detectors import ContentDetector
 from sklearn.preprocessing import minmax_scale
 from transformers import CLIPModel, CLIPProcessor
 
-from backend.utils.logger import get_logger
-from backend.utils.validators import slugify
+from utils.logger import get_logger
+from utils.validators import slugify
 
 logger = get_logger(__name__)
 
